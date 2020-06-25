@@ -16,4 +16,9 @@ public class Message {
 
     @ManyToOne(fetch = FetchType.LAZY)
     private Person person;
+
+    public Message(String title, String content)  {
+        this.title = title;
+        this.content = content;
+    }
 }
